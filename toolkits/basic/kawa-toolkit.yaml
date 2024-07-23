@@ -2,3 +2,5 @@ name: basic-tools
 tools:
   - name: Length of a Text
     file: length.py
+  - name: Length of a Text 2
+    file: length2.py
