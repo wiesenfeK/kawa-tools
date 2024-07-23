@@ -10,8 +10,8 @@ logger = logging.getLogger('script-logger')
 def execute(df: pd.DataFrame):
     logger.info('Starting the execution')
     
-    df['length1'] = df.apply(lambda row: len(row['text']), axis=1)
-    df['lenght2'] = df.apply(lambda row: len(row['text']), axis=1)
-    df['length3'] = df.apply(lambda row: len(row['text']), axis=1)
+    df['length1'] = df.apply(lambda row: 9 * len(row['text']), axis=1)
+    df['lenght2'] = df.apply(lambda row: 2 * len(row['text']), axis=1)
+    df['length3'] = df.apply(lambda row: 3 * len(row['text']), axis=1)
     
     return df
